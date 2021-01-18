@@ -1,0 +1,11 @@
+version: '3'
+services: 
+  python_atcoder:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: python3.8:atcoder
+    container_name: python_atcoder
+    tty: true
+    volumes: 
+      - ./mount_dir:/atcoder
