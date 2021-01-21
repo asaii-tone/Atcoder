@@ -54,14 +54,16 @@ print("Even" if x*y%2 == 0 else "Odd")
 python a.py < test.txt
 
 入力の個数が決まっているときは
+```python
 N, A, B = map(int, input().split())
 A, B, C, X = [int(input()) for i in range(4)]
+```
 でもいいのかも
 
 map()はイテレータを作る
 
 配列Aを大きい順に並び替える
-A.sort(reverse=True)
+`A.sort(reverse=True)`
 
 問題文と同じ名前の変数にした方が良さそう
 
@@ -73,9 +75,11 @@ python で 正規表現を扱うのは re ライブラリ
 re ライブラリで先頭を表す`^`と末尾を表す`$`と1回以上の繰り返しを表す`+`
 
 一気に値を受け取らないで1行ずつ受け取るの賢いな
+```python
 N = int(input())
 for i in range(N):
-    t, x, y = map(int, input().split())
+t, x, y = map(int, input().split())
+```
 1つ前の記録点の状態と今の状態でつながらないならエラーにするって賢い
 
 リストでソートして文字列にして比較するの賢い
@@ -84,3 +88,13 @@ for i in range(N):
 問題文をちゃんと読んだら、めっちゃ簡単に解けることもある
 
 計算対象を全部計算してリストにしたのち、一番小さい番目を取得するの賢い
+
+`[スタート:ゴール:ステップ]`でスライスする
+`[::-1]`だとすべての要素を逆順にする
+
+string から探す系はfind, index, rfind, rindex
+r がついてると後ろから探して その探したい文字列の最初の番号を返す
+index は find と同じだが 見つからなかったら -1 じゃなくてエラーを返す
+
+`n//4`は切り捨て除算
+`int(n/4)`と同じことっぽい
