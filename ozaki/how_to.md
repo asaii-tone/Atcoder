@@ -98,3 +98,15 @@ index は find と同じだが 見つからなかったら -1 じゃなくてエ
 
 `n//4`は切り捨て除算
 `int(n/4)`と同じことっぽい
+
+平方根は`math.sqrt(n)`
+二乗は`math.pow(x, y)`
+階乗`math.factorial(n)`
+
+組み合わせ(combination)の nCr
+def comb(n, r):
+    return int(math.factorial(n) / math.factorial(r) * math.factorial(n-r))
+float 型が整数かTrueFalseで判定
+f = 3.14
+boolean = f.is_integer()
+または float%1 == 0 でも判定できる
