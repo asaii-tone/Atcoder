@@ -98,3 +98,36 @@ index は find と同じだが 見つからなかったら -1 じゃなくてエ
 
 `n//4`は切り捨て除算
 `int(n/4)`と同じことっぽい
+
+平方根は`math.sqrt(n)`
+二乗は`math.pow(x, y)`
+階乗`math.factorial(n)`
+
+組み合わせ(combination)の nCr
+def comb(n, r):
+    return int(math.factorial(n) / math.factorial(r) * math.factorial(n-r))
+float 型が整数かTrueFalseで判定
+f = 3.14
+boolean = f.is_integer()
+または float%1 == 0 でも判定できる
+
+あまりリストのインデックス番号で値を取ってくると計算速度が出ない?
+
+```python
+# リストに含まれているか
+if(要素 in リスト)
+# リストに含まれていないか
+if(要素 not in リスト)
+if(not(要素 in リスト))
+# あるリストからある要素をすべて取り除く
+set(リスト)-{要素}
+```
+
+コメントを書くとコード長は長くなるが
+実行時間やメモリは変わらない
+
+無限ループ
+`while True:`
+
+N進数の桁を求める問題はその桁の最大値より小さいかで判断すればいいんやん
+33 なら 33 < 10**2 で2桁って

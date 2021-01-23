@@ -6,7 +6,7 @@
 #   print("Yes")
 # else:
 #   print("No")
-# ダメなパターンが分からん
+# 25 が反例 7*3+4 で Yes なのに 11*2+3 で No になる
 
 N = int(input())
 for i in range(int(N/7)+1):
