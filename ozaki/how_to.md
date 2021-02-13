@@ -148,3 +148,7 @@ print(*l)
 ```
 
 itertools.product() は引数のリスト分の全通りを返す
+
+from decimal import Decimal
+math.ceil()
+math.floor()
