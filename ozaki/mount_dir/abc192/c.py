@@ -1,0 +1,30 @@
+n, k = map(str, input().split())
+k = int(k)
+
+# n = list(n)
+# n = list(map(int, n))
+# a = sorted(n, reverse=False)
+# b = sorted(n, reverse=True)
+# a = list(map(str, a))
+# a = "".join(a)
+# a = int(a)
+# b = list(map(str, b))
+# b = "".join(b)
+# b = int(b)
+# n = b - a
+# print(n)
+
+for i in range(k):
+  n = list(n)
+  n = list(map(int, n))
+  a = sorted(n, reverse=False)
+  b = sorted(n, reverse=True)
+  a = list(map(str, a))
+  a = "".join(a)
+  a = int(a)
+  b = list(map(str, b))
+  b = "".join(b)
+  b = int(b)
+  n = b - a
+  n = str(n)
+print(n)
