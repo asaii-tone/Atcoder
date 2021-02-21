@@ -170,3 +170,10 @@ def binary_search(list, item):
             low = mid + 1
     return None
 ```
+
+累乗
+```python
+pow(base, exp[, mod])
+# pow(base, exp) % mod より効率よく計算されます
+```
+なんか第3引数渡すと計算めちゃ早くなる?
