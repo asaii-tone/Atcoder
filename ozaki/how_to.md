@@ -150,8 +150,11 @@ print(*l)
 itertools.product() は引数のリスト分の全通りを返す
 
 from decimal import Decimal
+10進数の計算をとても正確にするライブラリ
+
 math.ceil()
 math.floor()
+小数切り上げや切り捨てをするメソッド
 
 二分探索
 ```python
